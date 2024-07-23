@@ -33,7 +33,7 @@ local vim = game:GetService('VirtualInputManager');
    
    local win = DiscordLib:Window("Murder Mystery 2")
    
-   local serv = win:Server("ByteHub","http://www.roblox.com/asset/?id=6031075938")
+   local serv = win:Server("thánhđần hub","http://www.roblox.com/asset/?id=16405243702")
    function Notify(Title, Text, ButtonText)
      DiscordLib:Notification(Title, Text, ButtonText)
    end
