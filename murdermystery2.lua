@@ -46,7 +46,6 @@ local vim = game:GetService('VirtualInputManager');
    function Button(Tab, Text, Callback) return Tab:Button(tostring(Text), Callback) end
    local Main = Channel("Main")
    local Main2 = Channel("Game")
-   local SayMessageRequest = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest
    local G = Channel("UI")
    Button(Main, "Murderer & Sherrif Finder", function()
     local a = game:GetService("Players"):GetChildren()
@@ -61,7 +60,7 @@ local vim = game:GetService('VirtualInputManager');
      SayMessageRequest:FireServer(v.DisplayName.." is murderer.", "normalchat") end
      end
    end
-   end)
+end)
    Button(Main, "Kill All (Murderer Only)", function()
     for i, v in game:GetService("Players"):GetChildren() do
      if Plr.Backpack:FindFirstChild("Knife") then Plr.Backpack.Knife.Parent = Plr.Character end
